@@ -1,5 +1,9 @@
-@import "~normalize.css";
-@import "global/fonts.scss";
+@import '~normalize.css';
+@import "~bootstrap/scss/bootstrap";
+@import 'global/fonts.scss';
+@import 'global/variables.scss';
+@import './components/header/header.scss';
+@import './components/addTodo/addTodo.scss';
 
 body {
   font-family: 'Roboto', sans-serif;

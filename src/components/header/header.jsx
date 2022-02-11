@@ -1,8 +1,14 @@
-import React from "react";
+import React from 'react';
+import { Row, Col } from 'react-bootstrap'
 
 function Header() {
     return (
-        <div>To do list</div>
+        <Row>
+            <Col>
+                <div className='header'>To do list</div>
+            </Col>
+        </Row>
+        
     )
 }
 export default Header

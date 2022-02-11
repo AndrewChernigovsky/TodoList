@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Header from './components/header/header.jsx'
 import AddTodo from './components/addTodo/addTodo.jsx'
 import TodoList from './components/todoList/todoList.jsx'
+import { Container } from 'react-bootstrap'
 
 function App() {
 
@@ -24,11 +25,11 @@ function App() {
     ])
 
     return (
-        <div className='App'>
+        <Container>
             <Header />
             <AddTodo todo={todo} setTodo={setTodo} />
             <TodoList todo={todo} setTodo={setTodo} />
-        </div>
+        </Container>
     )
 }
 
