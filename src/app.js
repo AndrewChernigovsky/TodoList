@@ -20,7 +20,7 @@ function App() {
         {
             id: 3,
             title: 'third todo',
-            status: false
+            status: true
         }
     ])
 

@@ -6,17 +6,17 @@ function AddTodo ({todo, setTodo}) {
 
     const [value, setValue] = useState('')
 
-    console.log(value)
-
     function saveTodo () {
-        setTodo(
-            [...todo, {
-                id: uuidv4(),
-                title: value,
-                status: true
-            }]
-        )
-        setValue('')
+        if(value) {
+            setTodo(
+                [...todo, {
+                    id: uuidv4(),
+                    title: value,
+                    status: true
+                }]
+            )
+            setValue('')
+        } 
     }
 
     return (
